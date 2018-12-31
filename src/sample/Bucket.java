@@ -20,11 +20,11 @@ public class Bucket {
     }
 
     void moveRight(){
-        imageView.setX(getX()+0.2);
+        imageView.setX(getX()+3);
     }
 
     void moveLeft(){
-        imageView.setX(getX()-0.2);
+        imageView.setX(getX()-3);
     }
 
     static double getX(){

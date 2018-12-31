@@ -32,7 +32,7 @@ public class Settings{
 
         Button black = new Button("BLACK");
         black.setOnAction(event -> Main.setColor(Color.BLACK, this));
-        black.setFont(new Font("Impact", 15));
+        black.setFont(new Font("Impact", 13));
         black.setTextFill(Color.WHITE);
         black.setPrefWidth(70);
         black.setPrefHeight(20);
@@ -41,7 +41,7 @@ public class Settings{
 
         Button blue = new Button("BLUE");
         blue.setOnAction(event -> Main.setColor(Color.DARKBLUE, this));
-        blue.setFont(new Font("Impact", 15));
+        blue.setFont(new Font("Impact", 13));
         blue.setTextFill(Color.WHITE);
         blue.setPrefWidth(70);
         blue.setPrefHeight(20);
@@ -50,7 +50,7 @@ public class Settings{
 
         Button green = new Button("GREEN");
         green.setOnAction(event -> Main.setColor(Color.DARKGREEN, this));
-        green.setFont(new Font("Impact", 15));
+        green.setFont(new Font("Impact", 13));
         green.setTextFill(Color.WHITE);
         green.setPrefWidth(70);
         green.setPrefHeight(20);

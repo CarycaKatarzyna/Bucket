@@ -17,12 +17,10 @@ public class Score {
     }
 
     boolean checkIt(double ballX, double bucketX, int type, int idx){ // type { 0 - ball, 1 - bomb, 2 - life}
-        System.out.println(ballX + " " + bucketX + " ");
         if(ballX >= bucketX && ballX <= bucketX + Bucket.imageWidth()){
             if(type == 0) {
                 score++;
                 updateScore();
-                System.out.println("+1");
             }
             else if(type == 1){
                 game.endGame(score);
@@ -30,7 +28,6 @@ public class Score {
             else if(lifes < 5){
                 lifes++;
                 game.addLife();
-                System.out.println("<3");
             }
             game.remove(idx, 0);
             return true;

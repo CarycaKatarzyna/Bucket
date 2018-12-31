@@ -37,7 +37,6 @@ public class BallFactory {
             return bomb;
         }
         if( Main.generator.nextInt(10) == 1){
-            System.out.println("EXTRA LIFE");
             ExtraLife life = new ExtraLife(position, id, game);
             life.move(speed);
             map.put(id++, life);

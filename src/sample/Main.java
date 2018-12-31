@@ -41,7 +41,6 @@ public class Main extends Application {
 
     static void menuFromSettings(double hard){
         Main.hard = (int)hard;
-        System.out.println("hard "+ Main.hard);
         Menu menu = new Menu(new Pane(), Main.WIDTH, Main.HEIGHT);
         primaryStage.setScene(menu.printMenu());
     }
@@ -69,12 +68,11 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Main.primaryStage = primaryStage;
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Bucket");
         menu();
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);

@@ -107,7 +107,6 @@ public class Game {
     }
 
     private void setTimeLine(){
-        System.out.println("factory: " + (3-Main.hard));
         timeline = new Timeline(new KeyFrame(
                 Duration.seconds((3-Main.hard)),
                 x -> pane.getChildren().add(ballFactory.produce())));

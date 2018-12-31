@@ -17,15 +17,14 @@ public class Bucket {
         imageView.setX((Main.WIDTH-image.getWidth())/2);
         imageWidth = image.getWidth();
         imageHeight = image.getHeight();
-        System.out.println("wymiary: " + imageHeight + " " + imageWidth);
     }
 
     void moveRight(){
-        imageView.setX(getX()+3);
+        imageView.setX(getX()+0.2);
     }
 
     void moveLeft(){
-        imageView.setX(getX()-3);
+        imageView.setX(getX()-0.2);
     }
 
     static double getX(){

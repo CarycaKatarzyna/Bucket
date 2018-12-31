@@ -58,7 +58,6 @@ public class Settings{
         hBox.getChildren().add(green);
 
         hBox.setPrefWidth(70*3 + hBox.getSpacing()*2);
-        System.out.println((Main.WIDTH - hBox.getPrefWidth())/2);
         root.getChildren().add(hBox);
         hBox.setTranslateX((Main.WIDTH - hBox.getPrefWidth())/2);
 
